@@ -8,9 +8,10 @@
 :root {
   --primary: #3e54ac;
   --primary-darker: #0038b1;
+  --primary-lighter: #3e54ac8e;
   --bg: #ecf2ff;
   --text-dark: #1e1926;
-  --trash-hover: #df2e38;
+  --red: #df2e38;
 }
 
 .gridContainer {
@@ -40,13 +41,18 @@
 }
 
 .subtitle {
-  font-weight: normal;
-  color: var(--primary);
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: var(--primary-lighter);
+}
+
+.timerContainer {
+  grid-column: 2;
+  grid-row: 2;
 }
 
 .timer {
-  grid-column: 2;
-  grid-row: 2;
+  font-size: 4rem;
 }
 
 .btnContainer {
@@ -71,16 +77,25 @@
   background-color: var(--primary);
 }
 
-.btn:hover .fa-solid {
-  color: var(--bg);
+.btn:active {
+  opacity: 0.5;
 }
 
-.btn:has(.fa-trash-can):hover {
-  background-color: var(--trash-hover);
-  border-color: var(--trash-hover);
+.btn:hover .fa-solid {
+  color: var(--bg);
 }
 
 .btnContainer .fa-solid {
   font-size: 1.2rem;
   color: var(--primary);
+}
+
+.stop {
+  background-color: var(--red);
+  border-color: var(--bg);
+  display: none;
+}
+
+.stop .fa-stop {
+  color: var(--bg);
 }
