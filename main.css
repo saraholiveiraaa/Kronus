@@ -15,12 +15,7 @@
 }
 
 .gridContainer {
-  background: rgb(236, 242, 255);
-  background: linear-gradient(
-    335deg,
-    rgba(236, 242, 255, 1) 0%,
-    rgba(212, 225, 255, 1) 85%
-  );
+  background-color: var(--bg);
   display: grid;
   height: 100vh;
   justify-items: center;
@@ -38,12 +33,6 @@
   grid-column: 2;
   grid-row: 1;
   padding: 2rem;
-}
-
-.subtitle {
-  font-size: 1.3rem;
-  font-weight: 300;
-  color: var(--primary-lighter);
 }
 
 .timerContainer {
